@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz Project</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="main">
+            <div id="box">
+                <h2 id="quesBox">1. This is the sample question?</h2>
+                <div class="row">
+                    <input class="options" type="radio" value="a" id="option1" name="option" >
+                    <label for="option1">First Option</label>
+                </div>
+                <div class="row">
+                    <input class="options" type="radio" value="b" id="option2" name="option" >
+                    <label for="option2">Second Option</label>
+                </div>
+                <div class="row">
+                    <input class="options" type="radio" value="c" id="option3" name="option" >
+                    <label for="option3">Third Option</label>
+                </div>
+                <div class="row">
+                    <input class="options" type="radio" value="d" id="option4" name="option" >
+                    <label for="option4">Fourth Option</label>
+                </div>
+                <button class="btn" onclick="submitQuiz()">
+                    Submit
+                </button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
