@@ -1,0 +1,203 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+header {
+  font-size: 2.5rem;
+  color: #bb86fc;
+  margin-top: 2rem;
+}
+
+/* Form */
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+form input,
+form button {
+  padding: 0.75rem;
+  font-size: 1.25rem;
+  border: 2px solid #bb86fc;
+  border-radius: 5px;
+  background: #1f1f1f;
+  color: #e0e0e0;
+  margin: 0.5rem;
+}
+
+form input:focus,
+form button:focus {
+  outline: none;
+  border-color: #03dac6;
+}
+
+form button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background: #bb86fc;
+  color: #121212;
+}
+
+/* Select */
+.select {
+  margin: 1rem;
+  position: relative;
+}
+
+select {
+  padding: 0.75rem;
+  font-size: 1.25rem;
+  border: 2px solid #bb86fc;
+  border-radius: 5px;
+  background: #1f1f1f;
+  color: #e0e0e0;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  width: 14rem;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #e0e0e0;
+}
+
+/* Todo Container */
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.todo-list {
+  width: 80%;
+  max-width: 600px;
+  list-style: none;
+  padding: 0;
+}
+
+/* Todo Item */
+.todo {
+  margin: 0.5rem 0;
+  background: #1f1f1f;
+  padding: 1rem;
+  font-size: 1.25rem;
+  color: #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #bb86fc;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  word-break: break-word;
+}
+
+.todo:hover {
+  background: #bb86fc;
+  color: #121212;
+}
+
+.todo-item {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+/* Buttons */
+.trash-btn,
+.complete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #bb86fc;
+  margin-left: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.trash-btn:hover,
+.complete-btn:hover {
+  color: #03dac6;
+}
+
+/* Icons */
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+/* Animations */
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  form input,
+  form button {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .todo {
+    font-size: 1rem;
+  }
+
+  .trash-btn,
+  .complete-btn {
+    font-size: 1.25rem;
+  }
+
+  select {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  form input,
+  form button {
+    font-size: 0.875rem;
+    padding: 0.5rem;
+  }
+
+  .todo {
+    font-size: 0.875rem;
+  }
+
+  .trash-btn,
+  .complete-btn {
+    font-size: 1rem;
+  }
+}

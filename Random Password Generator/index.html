@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Random Password Generator</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+    <body>
+        <!-- Container for the password generator -->
+        <div class="container">
+            <h1>Generate a <br><span>Random Password</span></h1>
+
+            <!-- Form for password generation -->
+            <form onsubmit="event.preventDefault(); createPassword();">
+                <div class="display">
+                    <label for="password" class="visually-hidden">Password</label>
+                    <input type="text" id="password" placeholder="Password" aria-label="Generated password">
+                    <i class="fa-regular fa-copy" aria-label="Copy password" role="button" onclick="copyPassword()"></i>
+                </div>
+                <button type="submit">Generate Password</button>
+            </form>
+        </div>
+
+        <!-- Include JavaScript file -->
+        <script src="script.js"></script>
+    </body>
+</html>

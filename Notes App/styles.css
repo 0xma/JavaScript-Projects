@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #e0f7fa;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    min-height: 80vh;
+    background: #ffffff;
+    color: #333;
+    padding: 4% 5%;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container h1 {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    color: #00796b;
+}
+
+.container h1 i {
+    width: 50px;
+    margin-right: 10px;
+    color: #004d40;
+}
+
+.container button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(150deg, #00796b, #009688);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 40px;
+    padding: 15px 30px;
+    margin: 30px 0;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container button:hover {
+    background: linear-gradient(135deg, #009688, #00796b);
+    transform: translateY(-5px);
+}
+
+.container button i {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.notes-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 150px;
+    background: #fafafa;
+    color: #333;
+    padding: 20px;
+    margin: 20px 0;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.input-box:hover {
+    transform: translateY(-5px);
+}
+
+.input-box i {
+    width: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    color: #009688;
+}
+
+.input-box i:hover {
+    color: #004d40;
+}

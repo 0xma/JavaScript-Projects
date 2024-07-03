@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A simple and efficient Todo List application to manage your tasks." />
+    <meta name="keywords" content="Todo List, Tasks, Productivity" />
+    <meta name="author" content="Your Name" />
+    <title>TodoList 1</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Todo List</h1>
+    </header>
+    <main>
+      <form>
+        <fieldset>
+          <legend>Manage your tasks</legend>
+          <label for="todo-input">New Task:</label>
+          <input type="text" id="todo-input" class="todo-input" aria-label="Todo input" required />
+          <button class="todo-button" type="submit" aria-label="Add todo">
+            <i class="fas fa-plus-square"></i>
+          </button>
+          <label for="filter-todo">Filter Tasks:</label>
+          <select name="todos" id="filter-todo" class="filter-todo" aria-label="Filter todos">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="uncompleted">Uncompleted</option>
+          </select>
+        </fieldset>
+      </form>
+      <section class="todo-container" aria-live="polite">
+        <ul class="todo-list"></ul>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
